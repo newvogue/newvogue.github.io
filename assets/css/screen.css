@@ -13,11 +13,8 @@ License: https://www.wowthemes.net/freebies-license/
 
 /* Conteiner */
 .container {
-    width: 67%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 1140px;
+    max-width: 100%;
 }
 
 /* Categories */
@@ -87,6 +84,7 @@ section {
 
 section.recent-posts {
     margin-bottom: 0;
+    margin-top: 15px;
 }
 
 .section-title h2 {
@@ -115,6 +113,34 @@ section.recent-posts {
     margin-bottom: 0rem;
 }
 
+/* My Insert Card*/
+
+.card-sm {
+  max-width: 100%;
+  /*max-width: 360px;*/
+}
+
+.card-body{
+    flex: 1 1 auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    padding: .5rem .5rem;
+}
+
+.card-title {
+    margin-bottom: .5rem;
+}
+
+.card-footer {
+    padding: .4rem .75rem;
+}
+
+.mb-30px {
+
+}
+/* End My Insert Card */
+
 @media (min-width:576px) {
     .card-columns.listfeaturedtag {
         -webkit-column-count: 2;
@@ -131,7 +157,7 @@ section.recent-posts {
 }
 
 .listfeaturedtag {
-    border: 1px solid rgba(0, 0, 0, .125);
+    border: 1px solid rgba(0, 0, 0, .125); 
     border-radius: .25rem;
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
@@ -143,7 +169,7 @@ section.recent-posts {
 }
 
 .maxthumb {
-    max-height: 300px;
+    max-height: 250px;
     overflow: hidden;
 }
 
@@ -164,6 +190,15 @@ section.recent-posts {
 
 .listfeaturedtag .card-block {
     padding-left: 0;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .listfeaturedtag h2.card-title,
@@ -874,7 +909,8 @@ iframe {
 }
 
 .mb-30px {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding: 5px 7px;
 }
 
 .flex-first {
@@ -963,7 +999,50 @@ iframe {
 }
 
 /* Carousel */
+
+.pr-5 {
+    padding-right: 1rem !important;
+    /*padding-left: 0rem !important;*/
+}
+
 .carousel-inner {
-  height: 350px;
+  height: 400px;
+  border-radius: 3px;
+  /*border: 2px solid #fff;*/
+}
+
+.carousel-control-next, .carousel-control-prev {
+position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, .0);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/*.carousel-control-next:hover, .carousel-control-prev:hover {
+  background-color: rgb(255, 0, 0);
+}*/
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 100px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
 }
 /* End Carousel */

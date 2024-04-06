@@ -62,7 +62,7 @@ jQuery(document).ready(function($){
     });
 
 /* NavBar */
-/*
+
     // Hide Header on on scroll down
     var didScroll;
     var lastScrollTop = 0;
@@ -72,7 +72,7 @@ jQuery(document).ready(function($){
     $(window).scroll(function(event){
         didScroll = true;
     });
-*/
+
     setInterval(function() {
         if (didScroll) {
             hasScrolled();
