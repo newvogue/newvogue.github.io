@@ -68,7 +68,7 @@ jQuery(document).ready(function($){
     var lastScrollTop = 0;
     var delta = 5;
     var navbarHeight = $('nav').outerHeight();
-
+/*
     $(window).scroll(function(event){
         didScroll = true;
     });
@@ -79,9 +79,10 @@ jQuery(document).ready(function($){
             didScroll = false;
         }
     }, 250);
-
+*/
 
 /* AlertBar */
+/*
     function hasScrolled() {
         var st = $(this).scrollTop();
 
@@ -92,21 +93,21 @@ jQuery(document).ready(function($){
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight){
-            // Scroll Down            
+            // Scroll Down
             $('nav').removeClass('nav-down').addClass('nav-up'); 
             $('.nav-up').css('top', - $('nav').outerHeight() + 'px');
            
         } else {
             // Scroll Up
-            if(st + $(window).height() < $(document).height()) {               
+            if(st + $(window).height() < $(document).height()) {
                 $('nav').removeClass('nav-up').addClass('nav-down');
-                $('.nav-up, .nav-down').css('top', '0px');             
+                $('.nav-up, .nav-down').css('top', '0px');
             }
         }
 
         lastScrollTop = st;
     }
-        
+*/
     $('.site-content').css('margin-top', $('header').outerHeight() + 'px');  
     
     // spoilers
