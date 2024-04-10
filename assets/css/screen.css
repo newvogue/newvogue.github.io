@@ -9,7 +9,7 @@ License: https://www.wowthemes.net/freebies-license/
 }
 .mainheading {
     padding: .5rem 0rem;
-    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(/assets/images/background.png);
+    background-image: linear-gradient(rgba(9,0,77,0.25),rgba(9,0,77,0.25)), url(/assets/images/background.png);
     background-size: cover;
     background-position: center;
     padding-top: 50px;
@@ -482,7 +482,7 @@ blockquote {
 .featured-image {
     display: block;
     margin-bottom: 1.5rem;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .share {
@@ -854,6 +854,7 @@ h6 {
 
 img {
     max-width: 100%;
+    border-radius: .17rem;
 }
 
 .bottompagination span.navigation {
@@ -1074,7 +1075,7 @@ position: absolute;
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: 100px;
+    /* bottom: 100px; */
     left: 15%;
     z-index: 10;
     padding-top: 20px;
