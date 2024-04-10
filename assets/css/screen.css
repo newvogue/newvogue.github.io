@@ -9,10 +9,10 @@ License: https://www.wowthemes.net/freebies-license/
 }
 .mainheading {
     padding: .5rem 2rem;
-    background-image: linear-gradient(rgba(9,0,77,0.25),rgba(9,0,77,0.25)), url(/assets/images/background.jpg);
+    background-image: linear-gradient(rgba(9,0,77,0.25),rgba(9,0,77,0.25)), url(/assets/images/Sea.jpg);
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,18 +27,18 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 /* Categories */
-.p-5 {
-    padding: 0rem !important;
+/* .p-5 {
+    padding: 0rem!important;
     margin-bottom: 10px;
 }
 
 dl, ol, ul {
     margin-top: 0;
     margin-bottom: 0;
-    /* padding: 0; */
-    /* list-style: none; */
+    padding: 0;
+    list-style: none;
     text-align: left;
-}
+} */
 /* End Categories */
 
 a {
@@ -70,10 +70,11 @@ pre {
 
 .mediumnavigation {
     background: rgba(255, 255, 255, .97);
-    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
+    box-shadow: 0 1rem 3rem rgba(133, 133, 133, 0.1);
+    /* box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15); */
     transition: top 0.2s ease-in-out;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    /* padding-top: 3px;
+    padding-bottom: 3px; */
 }
 
 .main-content {
@@ -201,17 +202,22 @@ section.recent-posts {
 
 .listfeaturedtag h2.card-title,
 .listrecent h2.card-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 700;
     line-height: 1.25;
 }
 
 .listfeaturedtag h4.card-text,
 .listrecent h4.card-text {
-    color: rgba(0, 0, 0, .44);
+    font-family: ProximaNova-Semibold, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+    line-height: 1.5;
+    /* color: rgba(0, 0, 0, .44);
     font-size: 0.95rem;
     line-height: 1.6;
-    font-weight: 400;
+    font-weight: 400; */
 }
 
 .featured-box-img-cover {
@@ -238,7 +244,7 @@ section.recent-posts {
     font-size: .8rem;
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
 }
 
 .author-thumb {
@@ -343,9 +349,12 @@ span.post-read-more a:hover {
     color: green;
 }
 
-/*.navbar {
-    box-shadow: 0 0.125rem 0.375rem rgba(0,0,0,.15);
-}*/
+/* .navbar {
+  background-color: transparent;
+  box-shadow: rgba(0,0,0,.25);
+  border: 1px solid #ccc;
+  box-shadow: 0 0.125rem 0.375rem rgba(0,0,0,.1);
+} */
 
 .mediumnavigation .navbar-brand {
     font-weight: 500;
@@ -437,7 +446,7 @@ span.post-read-more a:hover {
     padding-bottom: 12px;
     font-size: 0.8rem;
     color: rgba(0, 0, 0, .44);
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 15px;
     position: relative;
     background: #fff;
@@ -448,10 +457,17 @@ span.post-read-more a:hover {
 }
 
 .article-post {
-    font-family: Merriweather;
+    color: #191919;
+    font-family: ProximaNova-Semibold, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.11px;
+    line-height: 28px;
+    margin: 0px 0px 16px;
+    /* font-family: Merriweather;
     font-size: 1.1rem;
     line-height: 1.84;
-    color: rgba(0, 0, 0, .8);
+    color: rgba(0, 0, 0, .8); */
 }
 
 blockquote {
@@ -568,16 +584,11 @@ blockquote {
 
     .listfeaturedtag .wrapfooter {
         position: relative;
-        margin-top: 30px;
+        margin-top: 3px;
     }
 
     .listfeaturedtag .card-block {
         padding: 20px;
-    }
-
-    .footer {
-        margin-top: 0px;
-        margin-bottom: 0px;
     }
 
 @media (max-width:1024px) {
@@ -900,9 +911,31 @@ iframe {
     }
 }
 
+/* Categories */
+.p-5 {
+  max-width: 100%;
+  padding-left: 0rem !important;
+  padding-top: 1rem !important;
+  padding-right: 1rem !important;
+  padding-bottom: 1rem !important;
+
+}
+
 .col-md-4 ul {
   list-style-type: none;
   padding-left: 0;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.col-md-4 li {
+    border-top: 1px solid #dfdfdf;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.col-md-4 a {
+  color: #000000;
 }
 
     .jumbotron.fortags .col-md-4 {
@@ -939,7 +972,7 @@ iframe {
 
 .mb-30px {
     margin-bottom: 20px;
-    padding: 5px 7px;
+    padding: 5px 14px;
 }
 
 .flex-first {
@@ -1043,7 +1076,7 @@ iframe {
 }
 
 .carousel-inner {
-  height: 400px;
+  /* height: 400px; */
   border-radius: 3px;
   /*border: 2px solid #fff;*/
   margin-bottom: 15px;
@@ -1089,3 +1122,15 @@ position: absolute;
 .container .posttitle {
   display: none;
 }
+/* End Post title in main-content container  */
+
+/* Recent Posts */
+/* .row.listrecent {
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-top: 10px;
+  background: #f8f8f8;
+} */
+/* End Recent Posts */
