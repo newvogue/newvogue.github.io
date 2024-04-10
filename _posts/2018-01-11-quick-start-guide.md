@@ -2,14 +2,12 @@
 layout: post
 title:  "5 Best Greek Islands to Visit in 2024"
 author: sal
-categories: [ Jekyll, tutorial ]
+categories: [ greek-islands ]
 image: assets/images/Symi.jpg
 featured: true
 hidden: true
 comments: false
 ---
-
-- A
 
 ## Journey into the world of history and beauty
 
@@ -19,7 +17,7 @@ When it comes to spectacular scenery, rich history and unrivaled beauty, the Gre
 
 ### Greek Islands You Can Visit
 
-1. **Rhodes**: Island of the Sun and Legends.
+- **Rhodes**: Island of the Sun and Legends.
 - **Santorini**: Diamond of the Aegean Sea.
 - **Naxos**: Island of the Gods and Serenity.
 - **Mykonos**: The epicenter of Fun and Luxury.

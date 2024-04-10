@@ -9,11 +9,15 @@ License: https://www.wowthemes.net/freebies-license/
 }
 .mainheading {
     padding: .5rem 0rem;
-    background-image: linear-gradient(rgba(9,0,77,0.25),rgba(9,0,77,0.25)), url(/assets/images/background.png);
+    background-image: linear-gradient(rgba(9,0,77,0.25),rgba(9,0,77,0.25)), url(/assets/images/background.jpg);
     background-size: cover;
     background-position: center;
-    padding-top: 50px;
-    height: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: #ffffff;
 }
 
 /* Conteiner */
@@ -31,8 +35,8 @@ License: https://www.wowthemes.net/freebies-license/
 dl, ol, ul {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0;
-    list-style: none;
+    /* padding: 0; */
+    /* list-style: none; */
     text-align: left;
 }
 /* End Categories */
@@ -146,18 +150,13 @@ section.recent-posts {
 }
 /* End My Insert Card */
 
-@media (min-width:576px) {
-    .card-columns.listfeaturedtag {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
-}
-
 @media (min-width:992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.8rem;
         padding-left: 0.8rem;
+    }
+    .mainheading-author {
+        height: 100px;
     }
 }
 
@@ -238,6 +237,9 @@ section.recent-posts {
     .featured-box-img-cover {
         height: auto;
         width: 100%;
+    }
+    .mainheading-author {
+        height: 100px;
     }
 }
 
@@ -414,15 +416,9 @@ span.post-read-more a:hover {
     margin-top: 170px;
 }
 
-.mainheading-author {
+/* .mainheading-author {
   max-height: 120px;
-}
-
-.posttitle {
-  text-align: center;
-  color: white;
-  margin-top: 130px;
-}
+} */
 
 .sitetitle{
   display: none;
@@ -526,12 +522,19 @@ blockquote {
     .share ul li {
         display: block;
     }
+    .mainheading-author {
+      max-height: 100px;
+}
 }
 
 @media (max-width:999px) {
     .featured-box-img-cover {
         height: 359px;
     }
+    .mainheading-author {
+    height: 100px;
+}
+}
 
     .alertbar {
         position: relative !Important;
@@ -602,6 +605,9 @@ blockquote {
 @media (max-width:767px) {
     .post-top-meta.authorpage {
         text-align: center;
+    }
+    .mainheading-author {
+        height: 190px;
     }
 }
 
@@ -911,6 +917,21 @@ iframe {
         background-image: url(../images/jumbotron.jpg);
         background-size: cover;
     }
+    .mainheading-author {
+        height: 120px;
+    }
+}
+
+@media (min-width:768px) {
+    .mainheading-author {
+      height: 120px!important;
+    }
+}
+
+.col-md-4 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
 
     .jumbotron.fortags .col-md-4 {
         background: rgba(0, 0, 0, 0.75);
@@ -920,21 +941,20 @@ iframe {
     .jumbotron.fortags .row {
         margin: 0;
     }
-}
 
 .jumbotron.fortags {
     margin-top: 3rem;
     padding: 0;
     border-radius: 0;
-    background-image: url(../images/jumbotron.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
 }
 
 .jumbotron.fortags a {
     padding: 5px 10px 7px;
-    background: #222;
+    background: #ffffff;
     border-radius: 30px;
-    color: #fff;
+    color: #000000;
     font-weight: 500;
     text-transform: lowercase;
     font-size: 0.8rem;
@@ -976,6 +996,29 @@ iframe {
 @media (max-width: 768px) {
     .share {
         margin-top: 30px;
+    }
+}
+
+@media (min-width:620px) {
+    .mainheading-author {
+      height: 190px!important;
+    }
+}
+
+@media (min-width:576px) {
+    .card-columns.listfeaturedtag {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    .mainheading-author {
+    height: 210px;
+}
+}
+
+@media (min-width:430px) {
+    .mainheading-author {
+      height: 230px;
     }
 }
 
