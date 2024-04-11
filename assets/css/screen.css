@@ -115,12 +115,25 @@ section.recent-posts {
 .article-post ol,
 .article-post ul {
     margin-bottom: 1.5rem;
+    background: #fbf5ee;
+    border-radius: 7px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 22px;
+    padding-left: 3.5rem;
 }
 
 .article-post ol ol,
 .article-post ul ul {
     list-style: disc;
     margin-bottom: 0rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 16px;
+}
+
+.article-post li {
+  padding-top: 8px;
 }
 
 /* My Insert Card*/
@@ -282,6 +295,14 @@ section.recent-posts {
 .toc ul {
     list-style: decimal;
     font-weight: 400;
+    text-align: left;
+    font-size: 17px;
+    background: none;
+    padding-bottom: 0px;
+}
+
+.toc ul li {
+  padding: 0;
 }
 
 .author-meta {
@@ -1134,3 +1155,9 @@ position: absolute;
   background: #f8f8f8;
 } */
 /* End Recent Posts */
+
+/* Bold Font */
+strong{
+  font-weight: bold;
+}
+/* End Bold Font */
