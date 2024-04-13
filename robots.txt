@@ -1,3 +1,24 @@
 User-agent: *
-Allow: /_site/
-Sitemap: /sitemap.xml
+Disallow: /_config.yml
+Disallow: /search/
+Disallow: /_site/
+Disallow: /_jekyll-cache/
+Disallow: /assets/
+Disallow: /bundle/
+Disallow: /git/
+Disallow: /github/
+Disallow: /sass/
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /_pages/
+Disallow: /_posts/
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+Disallow: /404.html
+Disallow: /500.html
+
+# Allow crawling of all other pages
+Allow: /
+Allow: /sitemap.html
+
+Sitemap: https://newvogue.github.io/sitemap.xml

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      /* Общий фон для всей страницы */
+      background-image: url('background.jpg');
+      /* Фоновое изображение */
+      background-size: cover;
+      /* Масштабирование фонового изображения */
+    }
+
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      /* Фон контейнера */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .breadcrumbs {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .breadcrumbs a {
+      text-decoration: none;
+      color: #666;
+      padding: 5px 20px; /* Регулируйте отступы, чтобы уместить стрелку */
+      background-color: #f0f0f0;
+      /* Фон для каждой отдельной ссылки */
+      border-radius: 4px;
+      position: relative;
+      display: inline-block;
+      margin-right: 12px;
+    }
+
+    .breadcrumbs a::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -13px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #666;
+      transform: translateY(-50%);
+    }
+    
+    .breadcrumbs a:last-child::after {
+      display: none; /* Убираем стрелку у последней ссылки */
+    }
+
+    .breadcrumbs a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .column {
+      width: calc(23% - 10px);
+      margin-bottom: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .column ul li+li {
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+      /* Увеличиваем отступ между строкой и разделителем */
+    }
+
+    .column h2 {
+      border-bottom: 1px solid #ccc;
+      /* Разделитель между заголовками и строками списка */
+      padding-bottom: 10px;
+      /* Отступ между заголовками и строками списка */
+    }
+
+    .column ul li {
+      margin-bottom: 15px;
+      /* Увеличиваем отступ между строкой текста и разделителем */
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Sitemap</h1>
+    </div>
+    <div class="breadcrumbs">
+      <a href="/">Home</a>
+      <a href="/sitemap">Sitemap</a>
+    </div>
+    <div class="column">
+      <h2>Main Pages</h2>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </div>
+    <div class="column">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="/categories">Category 1</a></li>
+        <li><a href="/categories">Category 2</a></li>
+        <li><a href="/categories">Category 3</a></li>
+        <li><a href="/categories">Category 4</a></li>
+        <!-- Add more categories as needed -->
+      </ul>
+    </div>
+    <div class="column">
+      <h2>Tags</h2>
+      <ul>
+        <li><a href="/tags">Tag 1</a></li>
+        <li><a href="/tags">Tag 2</a></li>
+        <li><a href="/tags">Tag 3</a></li>
+        <li><a href="/tags">Tag 4</a></li>
+        <!-- Add more tags as needed -->
+      </ul>
+    </div>
+    <div class="column">
+      <h2>Blog Posts</h2>
+      <ul>
+        {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
