@@ -2,8 +2,8 @@
 name: "NewVogue"
 title: "NewVogue"
 description: "Description."
-logo: 'assets/images/logo97x40.png'
-favicon: 'assets/images/logo97x40.png'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
 baseurl: ''
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
